@@ -1,0 +1,7 @@
+{
+    "values": [
+        "pk_core:base/tick"
+		"pk_esnl:base/tick"
+		"pk_strc:base/tick"
+    ]
+}

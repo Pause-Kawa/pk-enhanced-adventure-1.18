@@ -1,0 +1,7 @@
+{
+    "values": [
+        "pk_core:base/load"
+		"pk_esnl:base/load"
+		"pk_strc:base/load"
+    ]
+}
