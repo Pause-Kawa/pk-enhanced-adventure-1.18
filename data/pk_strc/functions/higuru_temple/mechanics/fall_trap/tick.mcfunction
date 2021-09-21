@@ -1,0 +1,2 @@
+execute if block ~ ~ ~ tripwire[powered=true] run function pk_strc:higuru_temple/mechanics/fall_trap/trigger
+execute unless block ~ ~ ~ tripwire run function pk_strc:higuru_temple/mechanics/fall_trap/disarm

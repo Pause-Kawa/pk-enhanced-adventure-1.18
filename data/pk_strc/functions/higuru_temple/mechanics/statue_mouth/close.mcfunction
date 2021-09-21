@@ -1,0 +1,1 @@
+setblock ~ ~2 ~ lever[face=ceiling,powered=true,facing=east]
