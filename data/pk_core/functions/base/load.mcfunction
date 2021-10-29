@@ -5,6 +5,9 @@
 scoreboard objectives add PKValue dummy
 # Const
 scoreboard players set %pk_const_100 PKValue 100
+scoreboard players set %pk_const_4 PKValue 4
+scoreboard players set %pk_const_3 PKValue 3
+scoreboard players set %pk_const_2 PKValue 2
 # Timer
 # - Simple timer and delay score use for most timer
 scoreboard objectives add PKTimer dummy
@@ -15,6 +18,10 @@ scoreboard objectives add PKSoundDelay dummy
 scoreboard objectives add PKLevel dummy
 # Counter
 scoreboard objectives add PKCounter dummy
+# Entities data
+scoreboard objectives add PKHealth dummy
+scoreboard objectives add PKMaxHealth dummy
+scoreboard objectives add PKHurtTime dummy
 
 # ----------------------------------------
 # Teams

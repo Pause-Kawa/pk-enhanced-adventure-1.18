@@ -1,0 +1,17 @@
+{
+    "name": "pk_strc:higuru_temple/surface",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "location": "pk_strc:higuru_temple/surface/starter",
+                "processors": {
+                    "processors": []
+                },
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element"
+            }
+        }
+    ]
+}

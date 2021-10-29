@@ -1,0 +1,2 @@
+execute if entity @s[tag=!pk_higuru_skeleton_guardian] run function pk_esnl:entities/higuru_skeleton/behavior/common/tick
+execute if entity @s[tag=pk_higuru_skeleton_guardian] run function pk_esnl:entities/higuru_skeleton/behavior/guardian/tick

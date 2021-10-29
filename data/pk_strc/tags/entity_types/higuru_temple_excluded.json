@@ -1,0 +1,15 @@
+{
+    "values": [
+        "minecraft:zombie",
+        "minecraft:zombie_villager",
+        "minecraft:husk",
+        "#minecraft:skeletons",
+        "minecraft:creeper",
+        "minecraft:spider",
+        "minecraft:witch",
+        "minecraft:slime",
+        "minecraft:enderman",
+        "minecraft:tnt",
+        "minecraft:tnt_minecart"
+    ]
+}

@@ -1,0 +1,1 @@
+playsound entity.wither.death ambient @a ~ ~ ~ 10 0.4

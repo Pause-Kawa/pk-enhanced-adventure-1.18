@@ -1,0 +1,2 @@
+title @p[tag=pk_use_ancient_altar] actionbar {"text": "The ancient altar need to contain only an ancient tablet and the desired item"}
+function pk_strc:higuru_temple/mechanics/ancient_altar/fail/animation

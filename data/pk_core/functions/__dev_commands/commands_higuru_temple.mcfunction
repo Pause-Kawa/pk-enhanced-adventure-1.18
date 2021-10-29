@@ -26,7 +26,9 @@ give @s chest{BlockEntityTag:{LootTable:"pk_strc:chests/higuru_temple/rare_treas
 # - Fight trigger
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_common_marker","pk_fight_trigger"],data:{TriggerValue:0}}
 # - Fight engine
-summon marker ~ ~ ~ {Tags:["pk_strc_marker","pk_common_marker","pk_fight_engine"],data:{Entities:[{Type:"higuru_skeleton_archer",ActiveEffects:[{Id:12b,Amplifier:0b,Duration:1000000000,ShowParticles:1b}]},{Type:"higuru_skeleton_archer"},{Type:"higuru_skeleton_axeman"}],Reinforcing:[{Type:"higuru_skeleton_random"}],SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],StartTriggers:[{Type:"higuru_temple_statue_mouth_close"}],ResolveTriggers:[{Type:"higuru_temple_statue_mouth_open"}],TriggerValue:0}}
+summon marker ~ ~ ~ {Tags:["pk_strc_marker","pk_common_marker","pk_fight_engine"],data:{Entities:[{Type:"higuru_skeleton_archer"},{Type:"higuru_skeleton_archer"},{Type:"higuru_skeleton_archer"},{Type:"higuru_skeleton_random"}],Reinforcing:[{Type:"higuru_skeleton_random"}],ReinforcingMax:5,SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],EventsOnStart:{Events:[{Name:"higuru_temple_statue_mouth_open"}]},EventsOnResolve:{Events:[{Type:"higuru_temple_statue_mouth_close"}]},EventsOnReset:[],Resetable:1b,TriggerValue:0}}
+# - Structure core
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_higuru_temple_marker","pk_strc_core"]}
 # - Statue mouth
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_higuru_temple_marker","pk_statue_mouth"],data:{TriggerValue:0}}
 # - Statue mouth
@@ -36,3 +38,18 @@ execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_higu
 # - Fall trap
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_higuru_temple_marker","pk_fall_trap_tripwire"],data:{TriggerValue:0}}
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_higuru_temple_marker","pk_fall_trap"],data:{TriggerValue:0}}
+# - Boss room
+summon marker ~ ~ ~ {Tags:["pk_strc_marker","pk_common_marker","pk_fight_engine","pk_higuru_temple_marker","pk_boss_room"],data:{Entities:[{Type:"higuru_skeleton_guardian"}],Reinforcing:[{Type:"higuru_skeleton_guardian"}],ReinforcingMax:3,SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],AnimationBeforeStart:[{Type:"higuru_temple_boss_room"}],AnimationBeforeStartTime:80,StartTriggers:[{Type:"higuru_temple_start_boss"}],ResolveTriggers:[{Type:"higuru_temple_free_boss"}],TriggerValue:11}}
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_higuru_temple_marker","pk_boss_room_corner"]}
+# Summon an Ancient Altar marker (one block below)
+execute align xyz run summon marker ~0.5 ~-1 ~0.5 {Tags:["pk_strc_marker","pk_higuru_temple_marker","pk_ancient_altar"]}
+# Summon an Ancient Altar dropper (one block below)
+setblock ~ ~-1 ~ dropper[facing=down]{CustomName:'{"text":"Ancient Altar"}'} replace
+# Ancient Altar Falling Block
+# - For other falling block, replace "~0.501 ~-1.001 ~0.501" with "~0.499 ~-0.999 ~0.499"
+execute align xyz positioned ~0.501 ~-1.001 ~0.501 run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:granite"},NoGravity:1b,Time:-2147483648,DropItem:0b}
+execute align xyz positioned ~0.499 ~-0.999 ~0.499 run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:granite"},NoGravity:1b,Time:-2147483648,DropItem:0b}
+# Horizontal doors
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_higuru_temple_marker","pk_small_after_boss_door"],data:{TriggerValue:11}}
+# Structure converter
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_higuru_temple_marker","pk_strc_converter"]}

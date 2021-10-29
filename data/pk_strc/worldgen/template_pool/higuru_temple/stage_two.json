@@ -1,0 +1,15 @@
+{
+    "name": "pk_strc:higuru_temple/stage_two",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "location": "pk_strc:higuru_temple/stage_two/stage_two_1",
+                "processors": "pk_strc:prevent_underground_blocks_change",
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element"
+            }
+        }
+    ]
+}

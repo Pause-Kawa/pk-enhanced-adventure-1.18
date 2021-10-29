@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": {
+                    "block": {
+                        "blocks": ["stone_button"]
+                    }
+                }
+            }
+        }
+    }
+}
