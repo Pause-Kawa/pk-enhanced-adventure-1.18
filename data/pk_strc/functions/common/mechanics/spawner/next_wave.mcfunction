@@ -1,24 +1,14 @@
-# Add resetable tag if needed 
-tag @s[tag=!pk_resetable,nbt={data:{Resetable:1b}}] add pk_resetable
+# Remove wave defeated tag and decrease the waves counter if not infinite
+scoreboard players remove @s[scores={PKSpawnerWave=1..}] PKSpawnerWave 1
+execute store result score @s PKDelay run data get entity @s data.WavesDelay
 
-# Build the Entities temp storage to summon from the fight engine data
+# Build the Entities temp storage to summon from the spawner data
 data modify storage pk_strc:current_data Entities set value []
 # Init or reset SpawnEntity as an empty array 
 data modify storage pk_strc:current_data SpawnEntity set value []
 
 # Base entities
 data modify storage pk_strc:current_data Entities append from entity @s data.Entities[]
-
-# Reinfocring Entities
-# Storing amount of players being at or less than 50 blocks from the trigger to summon reinforcing
-scoreboard players set %pk_reinforcing_count PKValue 0
-execute store result score %pk_reinforcing_count PKValue positioned ~-20 -64 ~-20 if entity @a[dx=40,dy=512,dz=40,gamemode=!spectator]
-# Set reinforcing max amount of entities if needed
-scoreboard players set %pk_reinforcing_max PKValue 2147483647
-execute store result score %pk_reinforcing_max PKValue run data get entity @s data.ReinforcingMax
-scoreboard players operation %pk_reinforcing_count PKValue < %pk_reinforcing_max PKValue
-# Add reinforcing entities to storage
-execute if score %pk_reinforcing_count PKValue matches 1.. run function pk_strc:common/mechanics/fight_engine/recursive_reinforcing_in_storage
 
 # Choose pattern to summon entities
 scoreboard players set %pk_current_entities_count PKValue 0
@@ -37,7 +27,7 @@ execute if score %pk_current_entities_count PKValue matches 9.. run function pk_
 execute if data entity @s data.SpawnAnimations[{Sound:"entity.evoker.cast_spell"}] run playsound entity.evoker.cast_spell ambient @a ~ ~ ~ 1 0.8
 
 # Trigger on start events
-execute if data entity @s data.EventsOnStart run function pk_strc:common/mechanics/fight_engine/events/on_start
+execute if data entity @s data.EventsOnWave run function pk_strc:common/mechanics/spawner/events/on_wave
 
-# Mark the fight engine as started
-tag @s add pk_start
+# Remove the marker if last wave
+kill @s[scores={PKSpawnerWave=0}]
