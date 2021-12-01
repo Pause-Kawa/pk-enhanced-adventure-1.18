@@ -1,0 +1,1 @@
+execute if entity @s[tag=!pk_UUID_stored] run function pk_core:entities_scores/store_uuid

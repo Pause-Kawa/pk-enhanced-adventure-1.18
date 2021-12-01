@@ -38,6 +38,8 @@ execute as @e[type=item,tag=!pk_checked_idendity] run function pk_esnl:entities/
 function pk_esnl:items/magnet_hook/tick
 # Rain dissipater
 execute as @e[type=arrow,tag=pk_armed_rain_dissipater] at @s run function pk_esnl:items/rain_dissipater/tick
+# Memorial excerpt
+execute as @e[type=item,tag=pk_memorial_excerpt] at @s run function pk_esnl:items/memorial_excerpt/tick
 
 # ----------------------------------------
 # Bewitchements

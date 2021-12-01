@@ -1,0 +1,1 @@
+give @s globe_banner_pattern{pkMemorialExcerpt:1b,display:{Name:'{"text":"Memorial Excerpt","color":"yellow","italic":false}',Lore:['{"text":"Throw on the ground"}','{"text":"to memorize an aera"}']},HideFlags:33,Enchantments:[{}]}

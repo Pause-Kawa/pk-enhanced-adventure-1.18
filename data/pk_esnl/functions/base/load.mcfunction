@@ -20,6 +20,11 @@ scoreboard objectives add PKHookRayDist dummy
 scoreboard objectives add PKHookUsingDelay dummy
 scoreboard objectives add PKHookUsingID dummy
 scoreboard objectives add PKHookTpTick dummy
+# Used for memorial excerpt 
+scoreboard objectives add PKMemorizedDim dummy
+scoreboard objectives add PKMemorizedX dummy
+scoreboard objectives add PKMemorizedY dummy
+scoreboard objectives add PKMemorizedZ dummy
 # Bewitchements
 # - Impetuousity
 scoreboard objectives add PKImpetuousLevel dummy

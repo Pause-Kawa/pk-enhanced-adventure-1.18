@@ -8,6 +8,11 @@ scoreboard players set %pk_const_100 PKValue 100
 scoreboard players set %pk_const_4 PKValue 4
 scoreboard players set %pk_const_3 PKValue 3
 scoreboard players set %pk_const_2 PKValue 2
+# UUID
+scoreboard objectives add PKUUID0 dummy
+scoreboard objectives add PKUUID1 dummy
+scoreboard objectives add PKUUID2 dummy
+scoreboard objectives add PKUUID3 dummy
 # Position
 scoreboard objectives add PKPosX dummy
 scoreboard objectives add PKPosY dummy
