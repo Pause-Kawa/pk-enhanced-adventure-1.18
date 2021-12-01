@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+        "#minecraft:buttons",
+        "#minecraft:candles",
+        "#minecraft:candle_cakes",
+        "#minecraft:carpets",
+        "#minecraft:climbable",
+        "#minecraft:flower_pots",
+        "#minecraft:pressure_plates",
+        "#minecraft:standing_signs",
+        "#minecraft:rails",
+        "#minecraft:wall_signs",
+        "#pk_core:plants",
+        "#pk_core:air",
+        "minecraft:fire",
+        "minecraft:redstone_wire",
+        "minecraft:soul_fire",
+        "minecraft:tripwire",
+        "minecraft:tripwire_hook"
+    ]
+}

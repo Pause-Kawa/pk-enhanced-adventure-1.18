@@ -1,0 +1,2 @@
+# Search relative player to pull from latch point (that has not been reached yet by the relative player)
+execute as @e[type=marker,tag=pk_magnet_hook_latch_point,tag=init,tag=!reached] run function pk_esnl:items/magnet_hook/pull/latch_point_search_player

@@ -1,0 +1,2 @@
+execute as @a[tag=pk_under_wild_cushioning_bewitchment] run function pk_esnl:mechanics/bewitchment/wild_cushioning/remove_player_attribute
+execute as @a[predicate=pk_esnl:bewitchment/wild_cushioning/wearing,predicate=pk_core:flags/is_sprinting] run function pk_esnl:mechanics/bewitchment/wild_cushioning/add_player_attribute

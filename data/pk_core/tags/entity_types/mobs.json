@@ -1,0 +1,8 @@
+{
+    "values": [
+        "#pk_core:hostile",
+        "#pk_core:neutral",
+        "#pk_core:passive",
+        "#pk_core:boss"
+    ]
+}

@@ -1,0 +1,56 @@
+[
+    {
+        "condition": "minecraft:location_check",
+        "offsetX": -1,
+        "predicate": {
+            "block": {
+                "tag": "pk_esnl:magnet_hook_traversable"
+            }
+        }
+    },
+    {
+        "condition": "minecraft:location_check",
+        "offsetX": 1,
+        "predicate": {
+            "block": {
+                "tag": "pk_esnl:magnet_hook_traversable"
+            }
+        }
+    },
+    {
+        "condition": "minecraft:location_check",
+        "offsetZ": -1,
+        "predicate": {
+            "block": {
+                "tag": "pk_esnl:magnet_hook_traversable"
+            }
+        }
+    },
+    {
+        "condition": "minecraft:location_check",
+        "offsetZ": 1,
+        "predicate": {
+            "block": {
+                "tag": "pk_esnl:magnet_hook_traversable"
+            }
+        }
+    },
+    {
+        "condition": "minecraft:location_check",
+        "offsetY": -1,
+        "predicate": {
+            "block": {
+                "tag": "pk_esnl:magnet_hook_traversable"
+            }
+        }
+    },
+    {
+        "condition": "minecraft:location_check",
+        "offsetY": 1,
+        "predicate": {
+            "block": {
+                "tag": "pk_esnl:magnet_hook_traversable"
+            }
+        }
+    }
+]

@@ -5,4 +5,4 @@ execute as @p[advancements={pk_strc:triggers/press_stone_button=true}] run tag @
 # If level over 40, continue the process, else run fail
 execute if entity @p[tag=pk_use_ancient_altar,level=..39] run function pk_strc:higuru_temple/mechanics/ancient_altar/fail/player_not_enough_levels
 execute if entity @p[tag=pk_use_ancient_altar,level=40..] run function pk_strc:higuru_temple/mechanics/ancient_altar/ancient_altar_check_content
-tag @s remove pk_use_ancient_altar
+tag @p[tag=pk_use_ancient_altar] remove pk_use_ancient_altar

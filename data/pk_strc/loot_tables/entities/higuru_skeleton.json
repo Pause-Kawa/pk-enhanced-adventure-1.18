@@ -13,11 +13,11 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{higuruSkeleton:1b,deathEvent:1b}"
+                            "tag": "{pkHiguruSkeleton:1b,pkDeathEvent:1b}"
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{dropExpOrbs:1b}",
+                            "tag": "{pkDropExpOrbs:1b}",
                             "conditions": [
                                 {
                                     "condition": "minecraft:killed_by_player"
@@ -26,13 +26,13 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{guardian:1b}",
+                            "tag": "{pkHiguruSkeletonGuardian:1b}",
                             "conditions": [
                                 {
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "nbt": "{Tags:[\"guardian\"]}"
+                                        "nbt": "{Tags:[\"pk_higuru_skeleton_guardian\"]}"
                                     }
                                 }
                             ]

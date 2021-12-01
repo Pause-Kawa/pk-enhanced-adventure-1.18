@@ -1,0 +1,1 @@
+give @s warped_fungus_on_a_stick{display:{Name:'{"text":"Magnet Hook","color":"yellow","italic":false}'},pkMagnetHook:1b,Enchantments:[{}]} 1

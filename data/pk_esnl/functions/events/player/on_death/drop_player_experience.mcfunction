@@ -1,0 +1,16 @@
+# Drop experience orbs depending on level
+execute if entity @s[level=1] run function pk_esnl:events/player/on_death/drop_experience/level_1
+execute if entity @s[level=2] run function pk_esnl:events/player/on_death/drop_experience/level_2
+execute if entity @s[level=3] run function pk_esnl:events/player/on_death/drop_experience/level_3
+execute if entity @s[level=4] run function pk_esnl:events/player/on_death/drop_experience/level_4
+execute if entity @s[level=5] run function pk_esnl:events/player/on_death/drop_experience/level_5
+execute if entity @s[level=6] run function pk_esnl:events/player/on_death/drop_experience/level_6
+execute if entity @s[level=7] run function pk_esnl:events/player/on_death/drop_experience/level_7
+execute if entity @s[level=8] run function pk_esnl:events/player/on_death/drop_experience/level_8
+execute if entity @s[level=9] run function pk_esnl:events/player/on_death/drop_experience/level_9
+execute if entity @s[level=10] run function pk_esnl:events/player/on_death/drop_experience/level_10
+execute if entity @s[level=11] run function pk_esnl:events/player/on_death/drop_experience/level_11
+execute if entity @s[level=12] run function pk_esnl:events/player/on_death/drop_experience/level_12
+execute if entity @s[level=13] run function pk_esnl:events/player/on_death/drop_experience/level_13
+execute if entity @s[level=14] run function pk_esnl:events/player/on_death/drop_experience/level_14
+execute if entity @s[level=15..] run function pk_esnl:events/player/on_death/drop_experience/level_max
