@@ -20,4 +20,4 @@ execute if score %pk_ancient_altar_applied_enchants PKValue matches 1.. run func
 execute unless score %pk_ancient_altar_applied_enchants PKValue matches 1.. run function pk_strc:higuru_temple/mechanics/ancient_altar/fail/invalid_item_to_enchant
 
 # Logs
-#tellraw @a [{"text":"Append "},{"score":{"name":"%PK_ancient_altar_applied_enchants","objective":"value"}},{"text":" enchantments."}]
+# tellraw @a [{"text":"Append "},{"score":{"name":"%PK_ancient_altar_applied_enchants","objective":"value"}},{"text":" enchantments."}]

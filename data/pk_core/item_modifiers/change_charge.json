@@ -1,0 +1,30 @@
+[
+    {
+        "function": "minecraft:copy_nbt",
+        "source": {
+            "type": "minecraft:storage",
+            "source": "pk_core:temp"
+        },
+        "ops": [
+            {
+                "source": "Charge",
+                "target": "pkCharge",
+                "op": "replace"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:copy_nbt",
+        "source": {
+            "type": "minecraft:storage",
+            "source": "pk_core:temp"
+        },
+        "ops": [
+            {
+                "source": "ChargeLore",
+                "target": "display.Lore[0]",
+                "op": "replace"
+            }
+        ]
+    }
+]

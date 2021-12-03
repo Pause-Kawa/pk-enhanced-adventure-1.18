@@ -1,0 +1,8 @@
+# Add data and team to the villager
+team join PKHiddenName @s
+data merge entity @s {Tags:["pk_mob","pk_villager","pk_alchemist_master","pk_hidden_name"],VillagerData:{profession:"cleric",level:99,type:"jungle"},CustomName:'"Alchemist Master"',Offers:{Recipes:[{maxUses:9999999,buy:{id:"minecraft:emerald",Count:4b},buyB:{id:"minecraft:golden_carrot",Count:1b},sell:{id:"minecraft:potion",Count:1b,tag:{pkTeleporationPotion:1b,CustomPotionColor:8246765,Enchantments:[{}],display:{Name:'{"text":"Potion of Teleportation","italic":false}',Lore:['"Teleport to your memorized point"']},HideFlags:33}}},{maxUses:9999999,buy:{id:"minecraft:emerald",Count:2b},buyB:{id:"minecraft:chorus_fruit",Count:5b},sell:{id:"minecraft:potion",Count:1b,tag:{pkTeleporationPotion:1b,CustomPotionColor:8246765,Enchantments:[{}],display:{Name:'{"text":"Potion of Teleportation","italic":false}',Lore:['"Teleport to your memorized point"']},HideFlags:33}}},{maxUses:9999999,buy:{id:"minecraft:emerald",Count:36b},buyB:{id:"minecraft:paper",Count:1b},sell:{id:"minecraft:globe_banner_pattern",Count:1b,tag:{pkMemorialExcerpt:1b,display:{Name:'{"text":"Memorial Excerpt","color":"yellow","italic":false}',Lore:['{"text":"Throw on the ground"}','{"text":"to memorize an aera"}']},HideFlags:33,Enchantments:[{id:"minecraft:power",lvl:1s}]}}}]}}
+# Animation
+playsound minecraft:block.brewing_stand.brew ambient @a ~ ~ ~ 1 0.64
+playsound minecraft:block.conduit.activate ambient @a ~ ~ ~ 1 1.24
+playsound minecraft:entity.villager.celebrate ambient @a ~ ~ ~ 1 1
+particle minecraft:dragon_breath ~ ~ ~ 1 1 1 0.01 40

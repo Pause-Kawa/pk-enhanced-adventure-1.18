@@ -12,11 +12,8 @@ scoreboard objectives add PHealthKPhase1 dummy
 scoreboard objectives add PHealthKPhase2 dummy
 scoreboard objectives add PHealthKPhase3 dummy
 # Used for phenix pepper on a stick
-scoreboard objectives add PKPPOASRayHit dummy
-scoreboard objectives add PKPPOASRayDist dummy
+scoreboard objectives add PKPPOASSlowDelay dummy
 # Used for magnet hook
-scoreboard objectives add PKHookRayHit dummy
-scoreboard objectives add PKHookRayDist dummy
 scoreboard objectives add PKHookUsingDelay dummy
 scoreboard objectives add PKHookUsingID dummy
 scoreboard objectives add PKHookTpTick dummy

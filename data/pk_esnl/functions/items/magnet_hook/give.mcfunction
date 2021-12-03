@@ -1,1 +1,1 @@
-give @s warped_fungus_on_a_stick{display:{Name:'{"text":"Magnet Hook","color":"yellow","italic":false}'},pkMagnetHook:1b,Enchantments:[{}]} 1
+give @s warped_fungus_on_a_stick{display:{Name:'{"text":"Magnet Hook","color":"yellow","italic":false}',Lore:['[{"text":"Charge: ","color":"white","italic":false},{"text":"5"},{"text":" / "},{"text":"5"}]']},pkMagnetHook:1b,pkCharge:5,pkChargeMax:5,Enchantments:[{}]} 1

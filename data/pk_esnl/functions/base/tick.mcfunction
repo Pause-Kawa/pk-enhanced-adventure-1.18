@@ -18,7 +18,7 @@ execute as @a[scores={PKOnDeath=1..}] at @s run function pk_esnl:events/player/o
 # ----------------------------------------
 
 # All
-team join HiddenName @e[type=#pk_esnl:mobs,tag=pk_hidden_name]
+team join PKHiddenName @e[type=#pk_esnl:mobs,tag=pk_hidden_name]
 # Villagers
 execute as @e[type=villager,tag=pk_villager] at @s run function pk_esnl:entities/villager/common/tick
 # Zombie villagers
@@ -34,8 +34,10 @@ execute as @e[type=item,tag=!pk_checked_idendity] run function pk_esnl:entities/
 # Items
 # ----------------------------------------
 
-# Magnet Hook
+# Magnet hook
 function pk_esnl:items/magnet_hook/tick
+# Phenix pepper on a stick
+execute as @a[tag=pk_player_using_ppoas] run function pk_esnl:items/phenix_pepper_on_a_stick/check_player
 # Rain dissipater
 execute as @e[type=arrow,tag=pk_armed_rain_dissipater] at @s run function pk_esnl:items/rain_dissipater/tick
 # Memorial excerpt

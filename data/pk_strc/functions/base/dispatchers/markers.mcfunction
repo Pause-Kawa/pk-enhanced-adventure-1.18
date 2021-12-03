@@ -11,6 +11,3 @@ execute if entity @s[tag=pk_higuru_temple_marker] run function pk_strc:higuru_te
 
 # Steam Wellbore
 #execute if entity @s[tag=pk_steam_wellbore_marker] run function pk_strc:steam_wellbore/dispatchers/markers
-
-# Swamp Mansion
-#execute if entity @s[tag=pk_swamp_mansion_marker] run function pk_strc:swamp_mansion/dispatchers/markers

@@ -4,6 +4,7 @@
 # Simple value score used for most operation
 scoreboard objectives add PKValue dummy
 # Const
+scoreboard players set %pk_const_1000 PKValue 1000
 scoreboard players set %pk_const_100 PKValue 100
 scoreboard players set %pk_const_4 PKValue 4
 scoreboard players set %pk_const_3 PKValue 3
@@ -31,20 +32,22 @@ scoreboard objectives add PKSoundDelay dummy
 scoreboard objectives add PKLevel dummy
 # Counter
 scoreboard objectives add PKCounter dummy
+# Raycast
+scoreboard objectives add PKRaycastHit dummy
+scoreboard objectives add PKRaycastDist dummy
 # Entities data
 scoreboard objectives add PKPlayerHealth health
 scoreboard objectives add PKHealth dummy
 scoreboard objectives add PKMaxHealth dummy
 scoreboard objectives add PKHurtTime dummy
-# - Villagers Jobiste block position
-scoreboard objectives add PKPosJobsiteX dummy
-scoreboard objectives add PKPosJobsiteY dummy
-scoreboard objectives add PKPosJobsiteZ dummy
 # Player events
 scoreboard objectives add PKOnDeath deathCount
 scoreboard objectives add PKOnUseCOAS minecraft.used:carrot_on_a_stick
 scoreboard objectives add PKOnUseWFOAS minecraft.used:warped_fungus_on_a_stick
 scoreboard objectives add PKOnShotWithBow minecraft.used:bow
+# Tools
+scoreboard objectives add PKCharge dummy
+scoreboard objectives add PKChargeMax dummy
 
 # ----------------------------------------
 # Teams
