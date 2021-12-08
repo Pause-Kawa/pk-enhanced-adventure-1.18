@@ -37,4 +37,4 @@ execute unless score %pk_ppoas_spread_fire PKValue matches 0..1 run scoreboard p
 # ----------------------------------------
 # Custom onDeath event for Faithfulness bewitchment : 
 # - gamerule keepInventory is turned to on by default. Players drop their inventory and experience orbs through a custom actions.
-gamerule keepInventory true
+gamerule keepInventory true 

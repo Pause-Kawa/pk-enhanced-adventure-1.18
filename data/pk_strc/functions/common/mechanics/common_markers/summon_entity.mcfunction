@@ -5,11 +5,11 @@ execute if data storage pk_strc:current_data SpawnEntity[{Type:"higuru_skeleton_
 execute if data storage pk_strc:current_data SpawnEntity[{Type:"higuru_skeleton_random"}] run function pk_esnl:entities/higuru_skeleton/summon/random
 execute if data storage pk_strc:current_data SpawnEntity[{Type:"higuru_skeleton_guardian"}] run function pk_esnl:entities/higuru_skeleton/summon/guardian
 # - Silverfish
-execute if data storage pk_strc:current_data SpawnEntity[{Type:"silverfish"}] run summon silverfish ~ ~ ~ {Tags:["pk_strc_mob"]}
+execute if data storage pk_strc:current_data SpawnEntity[{Type:"silverfish"}] run summon silverfish ~ ~ ~ {Tags:["pk_mob"]}
 # - Swamp mansory
-execute if data storage pk_strc:current_data SpawnEntity[{Type:"witch"}] run summon witch ~ ~ ~ {Tags:["pk_strc_mob"]}
-execute if data storage pk_strc:current_data SpawnEntity[{Type:"evoker"}] run summon evoker ~ ~ ~ {Tags:["pk_strc_mob"]}
-execute if data storage pk_strc:current_data SpawnEntity[{Type:"vindicator"}] run summon vindicator ~ ~ ~ {Tags:["pk_strc_mob"],HandItems:[{id:"minecraft:iron_axe",Count:1b},{}]}
+execute if data storage pk_strc:current_data SpawnEntity[{Type:"witch"}] run summon witch ~ ~ ~ {Tags:["pk_mob"]}
+execute if data storage pk_strc:current_data SpawnEntity[{Type:"evoker"}] run summon evoker ~ ~ ~ {Tags:["pk_mob"]}
+execute if data storage pk_strc:current_data SpawnEntity[{Type:"vindicator"}] run summon vindicator ~ ~ ~ {Tags:["pk_mob"],HandItems:[{id:"minecraft:iron_axe",Count:1b},{}]}
 
 # Link the entity to relative marker
 # - Fight Engine

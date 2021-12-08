@@ -10,4 +10,4 @@ execute if entity @s[tag=pk_common_marker] run function pk_strc:common/dispatche
 execute if entity @s[tag=pk_higuru_temple_marker] run function pk_strc:higuru_temple/dispatchers/markers
 
 # Steam Wellbore
-#execute if entity @s[tag=pk_steam_wellbore_marker] run function pk_strc:steam_wellbore/dispatchers/markers
+execute if entity @s[tag=pk_steam_strays_wellbore_marker] run function pk_strc:steam_strays_wellbore/dispatchers/markers

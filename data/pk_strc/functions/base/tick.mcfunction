@@ -10,7 +10,7 @@ execute as @e[type=marker,tag=pk_strc_marker] at @s run function pk_strc:base/di
 # Events
 # ----------------------------------------
 # Remove advancement when a player press a button (after previous execution)
-advancement revoke @a[advancements={pk_strc:triggers/press_stone_button=true}] only pk_strc:triggers/press_stone_button
+advancement revoke @a[advancements={pk_strc:triggers/press_button=true}] only pk_strc:triggers/press_button
 
 # ----------------------------------------
 # Player Effect
@@ -23,4 +23,4 @@ execute as @a[tag=pk_forced_gamemode_adventure,predicate=!pk_core:effects/luck_i
 # Swamp Mansory
 # ----------------------------------------
 # Generate a Swamp Mansory over a Swamp Hut
-execute as @e[type=witch,tag=!pk_strc_mob,predicate=pk_strc:location/swamp_hut] unless entity @e[type=marker,tag=pk_swamp_mansory,distance=..50] at @s run function pk_strc:swamp_mansory/generate
+execute as @e[type=witch,tag=!pk_mob,predicate=pk_strc:location/swamp_hut] unless entity @e[type=marker,tag=pk_swamp_mansory,distance=..50] at @s run function pk_strc:swamp_mansory/generate

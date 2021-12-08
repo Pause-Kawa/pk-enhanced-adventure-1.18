@@ -5,7 +5,7 @@
             "conditions": {
                 "location": {
                     "block": {
-                        "blocks": ["stone_button"]
+                        "tag": "minecraft:buttons"
                     }
                 }
             }
