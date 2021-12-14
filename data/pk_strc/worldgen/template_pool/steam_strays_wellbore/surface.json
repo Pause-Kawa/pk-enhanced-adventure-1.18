@@ -1,0 +1,15 @@
+{
+    "name": "pk_strc:steam_strays_wellbore/surface",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "location": "pk_strc:steam_strays_wellbore/surface_1",
+                "processors": "pk_strc:prevent_underground_blocks_change",
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element"
+            }
+        }
+    ]
+}

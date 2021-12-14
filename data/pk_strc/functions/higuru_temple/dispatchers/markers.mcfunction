@@ -21,5 +21,5 @@ execute if entity @s[tag=pk_ancient_altar] if entity @p[distance=..10] run funct
 # Structure core
 execute unless score %pk_dev PKValue matches 1.. if entity @s[tag=pk_strc_core] positioned ~-28 -64 ~-28 run function pk_strc:higuru_temple/mechanics/structure_core/tick
 
-# Structure converter
-execute unless score %pk_dev PKValue matches 1.. if entity @s[tag=pk_strc_converter] if entity @p[distance=..128] positioned ~-28 ~-1 ~-28 run function pk_strc:higuru_temple/mechanics/structure_converter/tick
+# Structure generator
+execute unless score %pk_dev PKValue matches 1.. if entity @s[tag=pk_strc_generator] if entity @p[distance=..128] positioned ~-22 ~ ~-22 run function pk_strc:higuru_temple/mechanics/manual_generation/trigger

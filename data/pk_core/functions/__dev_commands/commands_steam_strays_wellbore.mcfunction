@@ -21,4 +21,8 @@ summon marker ~ ~ ~ {Tags:["pk_strc_marker","pk_common_marker","pk_spawner"],dat
 
 # hopper_minecart loot_table
 data modify entity @e[type=hopper_minecart,limit=1,sort=nearest] LootTable set value "pk_strc:chests/steam_strays_wellbore/minecart_random"
+# chest loot_table
 data modify block ~ ~ ~ LootTable set value "pk_strc:chests/steam_strays_wellbore/chest_random"
+
+# Structure generator
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_steam_strays_wellbore_marker","pk_strc_generator"]}

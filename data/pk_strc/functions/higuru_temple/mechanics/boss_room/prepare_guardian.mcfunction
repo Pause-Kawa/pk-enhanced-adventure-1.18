@@ -29,5 +29,3 @@ scoreboard players operation @s PHealthKPhase2 /= %pk_const_2 PKValue
 # - Phase 3
 scoreboard players operation @s PHealthKPhase3 = %pk_boss_max_health PKValue
 scoreboard players operation @s PHealthKPhase3 /= %pk_const_4 PKValue
-
-say prepared

@@ -14,9 +14,7 @@
                                 {
                                     "condition": "minecraft:match_tool",
                                     "predicate": {
-                                        "items": [
-                                            "minecraft:air"
-                                        ],
+                                        "items": ["minecraft:air"],
                                         "nbt": "{drop_contents:1b}"
                                     }
                                 }
@@ -53,6 +51,7 @@
                                 },
                                 {
                                     "function": "minecraft:set_contents",
+                                    "type": "minecraft:shulker_box",
                                     "entries": [
                                         {
                                             "type": "minecraft:dynamic",
@@ -67,4 +66,4 @@
             ]
         }
     ]
-  }
+}

@@ -53,3 +53,5 @@ execute align xyz positioned ~0.499 ~-0.999 ~0.499 run summon falling_block ~ ~ 
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_higuru_temple_marker","pk_small_after_boss_door"],data:{TriggerValue:11}}
 # Structure converter
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_higuru_temple_marker","pk_strc_converter"]}
+# Structure generator
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_strc_marker","pk_higuru_temple_marker","pk_strc_generator"]}

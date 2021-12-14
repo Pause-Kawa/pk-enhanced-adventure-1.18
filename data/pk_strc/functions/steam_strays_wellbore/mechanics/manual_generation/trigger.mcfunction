@@ -1,0 +1,2 @@
+execute unless entity @s[tag=pk_terrain_is_prepared] run function pk_strc:steam_strays_wellbore/mechanics/manual_generation/prepare
+execute if entity @s[tag=pk_terrain_is_prepared] run function pk_strc:steam_strays_wellbore/mechanics/manual_generation/generate

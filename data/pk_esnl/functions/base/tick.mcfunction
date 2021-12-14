@@ -25,6 +25,8 @@ execute as @e[type=villager,tag=pk_villager] at @s run function pk_esnl:entities
 execute as @e[type=zombie_villager] at @s run function pk_esnl:entities/zombie_villager/common/tick
 # Higuru Skeletons
 execute as @e[type=#skeletons,tag=pk_higuru_skeleton] at @s run function pk_esnl:entities/higuru_skeleton/behavior/common/tick_dispatcher
+# Steam strays polar bear
+execute as @e[type=polar_bear,tag=pk_steam_strays_mount,tag=!pk_has_target] at @s if entity @p[distance=..10] run function pk_esnl:entities/steam_stray/behavior/polar_bear/aggro
 # Arrows
 execute as @e[type=arrow,tag=!pk_checked_idendity] run function pk_esnl:entities/arrow/check
 # Items

@@ -10,6 +10,14 @@ execute if data storage pk_strc:current_data SpawnEntity[{Type:"silverfish"}] ru
 execute if data storage pk_strc:current_data SpawnEntity[{Type:"witch"}] run summon witch ~ ~ ~ {Tags:["pk_mob"]}
 execute if data storage pk_strc:current_data SpawnEntity[{Type:"evoker"}] run summon evoker ~ ~ ~ {Tags:["pk_mob"]}
 execute if data storage pk_strc:current_data SpawnEntity[{Type:"vindicator"}] run summon vindicator ~ ~ ~ {Tags:["pk_mob"],HandItems:[{id:"minecraft:iron_axe",Count:1b},{}]}
+# - Steam strays wellbore 
+execute if data storage pk_strc:current_data SpawnEntity[{Type:"steam_stray_soldier_on_polar_bear"}] run function pk_esnl:entities/steam_stray/summon/polar_bear_mounter
+execute if data storage pk_strc:current_data SpawnEntity[{Type:"steam_stray_soldier_axeman"}] run function pk_esnl:entities/steam_stray/summon/soldier_axeman
+execute if data storage pk_strc:current_data SpawnEntity[{Type:"steam_stray_soldier_archer"}] run function pk_esnl:entities/steam_stray/summon/soldier_archer
+execute if data storage pk_strc:current_data SpawnEntity[{Type:"steam_stray_soldier_random"}] run function pk_esnl:entities/steam_stray/summon/soldier_random
+execute if data storage pk_strc:current_data SpawnEntity[{Type:"steam_stray_worker_shovel"}] run function pk_esnl:entities/steam_stray/summon/worker_shovel
+execute if data storage pk_strc:current_data SpawnEntity[{Type:"steam_stray_worker_pickaxe"}] run function pk_esnl:entities/steam_stray/summon/worker_pickaxe
+execute if data storage pk_strc:current_data SpawnEntity[{Type:"steam_stray_worker_random"}] run function pk_esnl:entities/steam_stray/summon/worker_random
 
 # Link the entity to relative marker
 # - Fight Engine
@@ -25,3 +33,4 @@ execute if data storage pk_strc:current_data SpawnEntity[0].ActiveEffects run da
 # Spawn animations on entity
 execute if data entity @s data.SpawnAnimations[{Particles:"soul_fire_flame"}] run particle soul_fire_flame ~ ~ ~ 0.5 1 0.5 0.01 6
 execute if data entity @s data.SpawnAnimations[{Particles:"enchant"}] run particle enchant ~ ~ ~ 0.5 1 0.5 0.01 6
+execute if data entity @s data.SpawnAnimations[{Particles:"poof"}] run particle poof ~ ~ ~ 0.5 1 0.5 0.01 2
