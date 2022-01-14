@@ -7,7 +7,7 @@ fill ~ ~-1 ~ ~45 ~-14 ~45 stone replace
 fill ~ ~-15 ~ ~45 ~-29 ~45 stone replace
 
 # Remove eventual entities
-tp @e[type=!player,dx=45,dy=-28,dz=45] ~ -1000 ~
+tp @e[type=!player,type=!marker,dx=45,dy=-28,dz=45] ~ -1000 ~
 
 # Naturally generated structure post-processors blocks conversion
 function pk_strc:higuru_temple/mechanics/manual_generation/post_processor_blocks_conversion

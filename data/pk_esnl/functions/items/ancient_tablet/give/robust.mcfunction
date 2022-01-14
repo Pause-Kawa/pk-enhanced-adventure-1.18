@@ -1,0 +1,1 @@
+give @s name_tag{display:{Name:'{"text":"Robust Ancient Tablet","italic":false}',Lore:['{"text":"Robustness","color":"yellow","italic":false}']},pkAncientTablet:1b,pkAncientTabletRobustness:1b,Enchantments:[{}]} 1

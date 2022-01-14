@@ -1,0 +1,1 @@
+give @s name_tag{display:{Name:'{"text":"Impetuous Ancient Tablet","italic":false}',Lore:['{"text":"Impetuosity","color":"yellow","italic":false}']},pkAncientTablet:1b,pkAncientTabletImpetuousity:1b,Enchantments:[{}]} 1

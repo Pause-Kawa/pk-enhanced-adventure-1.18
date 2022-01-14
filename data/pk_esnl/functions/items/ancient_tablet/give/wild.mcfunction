@@ -1,0 +1,1 @@
+give @s name_tag{display:{Name:'{"text":"Wild Ancient Tablet","italic":false}',Lore:['{"text":"Wild Cushioning","color":"yellow","italic":false}']},pkAncientTablet:1b,pkAncientTabletWildCushioning:1b,Enchantments:[{}]} 1

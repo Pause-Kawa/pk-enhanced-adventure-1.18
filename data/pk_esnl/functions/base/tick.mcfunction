@@ -18,7 +18,7 @@ execute as @a[scores={PKOnDeath=1..}] at @s run function pk_esnl:events/player/o
 # ----------------------------------------
 
 # All
-team join PKHiddenName @e[type=#pk_esnl:mobs,tag=pk_hidden_name]
+team join PKHiddenName @e[type=#pk_esnl:mobs,tag=pk_hidden_name,team=!PKHiddenName]
 # Villagers
 execute as @e[type=villager,tag=pk_villager] at @s run function pk_esnl:entities/villager/common/tick
 # Zombie villagers
